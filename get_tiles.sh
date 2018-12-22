@@ -20,5 +20,8 @@ URL=$(QT_QPA_PLATFORM=offscreen phantomjs /dzi-dl/dzixmlreqs.js "$1")
 cd /dzi-dl
 bundle exec ./dzi-dl.rb "${URL}"
 
+# Show what was produced (if anything)
+ls -l
+
 # Copy the resulting image to the output directory
-cp -v dzc_output.jpg ${OUTPUT_DIR}/output.jpg
+cp -v *.jpg ${OUTPUT_DIR}/
