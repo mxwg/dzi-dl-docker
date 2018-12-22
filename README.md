@@ -7,11 +7,13 @@ It downloads a full-resolution image of a DZI image embedded on a page.
 ## Building
 
 Build the image with
+
     docker build -t dzi-dl .
 
 ## Running
 
 For running the image, you need to provide an output directory at "/result" and a page URL:
+
     docker run -it --rm -v $PWD:/result dzi-dl <url>
 
 ## Limitations
